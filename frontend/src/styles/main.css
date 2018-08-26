@@ -30,9 +30,19 @@ html, body, #root, .App {
 .Header .form-control-feedback:hover {
   color: #888;
 }
+#popover-feedback {
+  text-align: justify;
+}
+.example-btn {
+  color: #B31B1B;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 .ErrorAlert {
   margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .SplitPane {
@@ -73,4 +83,14 @@ html, body, #root, .App {
   font-weight: bold;
   line-height: 18px;
   color: #fff;
+}
+.leaflet-popup-content {
+  text-align: center;
+}
+.leaflet-popup-content h4 {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+.leaflet-popup-content p {
+  margin: 0;
 }

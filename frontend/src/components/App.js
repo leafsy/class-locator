@@ -153,6 +153,10 @@ export default class App extends React.Component {
     this.setState({ link: link });
   }
 
+  handleExample() {
+    this.setState({ link: '5f07f5c8e40b6a5d2788eb7fadf56ded' });
+  }
+
   handleSubmission() {
     axios.get(`/api/classlocator?link=${this.state.link}`)
     .then(resp => {
@@ -177,6 +181,7 @@ export default class App extends React.Component {
         <Header
           link={link}
           linkChangeListener={(e) => this.handleLinkChange(e.target.value)}
+          exampleListener={() => this.handleExample()}
           submissionListener={() => this.handleSubmission()}
         />
       {

@@ -47,7 +47,7 @@ export default class MapHolder extends React.Component {
           >
             <Popup>
               <h4>{event.course}</h4>
-              <h5>{event.section}</h5>
+              <p>{event.section}</p>
               <p>{event.startTime} - {event.endTime}</p>
               <p>{event.room}</p>
             </Popup>
