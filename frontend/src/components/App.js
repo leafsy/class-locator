@@ -8,99 +8,6 @@ import Schedule from './Schedule';
 import MapHolder from './MapHolder';
 import ErrorAlert from './ErrorAlert';
 
-const data = [
-   {
-      "schedule":"NYNYNYN",
-      "startDate":"08/23/2018",
-      "course":"CS 4320",
-      "endTime":"3:20PM",
-      "section":"LEC 001",
-      "startTime":"2:30PM",
-      "endDate":"12/04/2018",
-      "latlng":[
-         42.445429,
-         -76.484397
-      ],
-      "room":"Olin Hall 155",
-      "color":"#677077"
-   },
-   {
-      "schedule":"NNYNYNN",
-      "startDate":"08/23/2018",
-      "course":"CS 4740",
-      "endTime":"2:40PM",
-      "section":"LEC 001",
-      "startTime":"1:25PM",
-      "endDate":"12/04/2018",
-      "latlng":[
-         42.445429,
-         -76.484397
-      ],
-      "room":"Olin Hall 155",
-      "color":"green"
-   },
-   {
-      "schedule":"NYNYNYN",
-      "startDate":"08/23/2018",
-      "course":"CS 4750",
-      "endTime":"4:25PM",
-      "section":"LEC 001",
-      "startTime":"3:35PM",
-      "endDate":"12/04/2018",
-      "latlng":[
-         42.443989,
-         -76.484547
-      ],
-      "room":"Hollister Hall B14",
-      "color":"#e91e63"
-   },
-   {
-      "schedule":"NNYNYNN",
-      "startDate":"08/23/2018",
-      "course":"CS 4780",
-      "endTime":"12:55PM",
-      "section":"LEC 001",
-      "startTime":"11:40AM",
-      "endDate":"12/04/2018",
-      "latlng":[
-         42.44577564390459,
-         -76.48215481743551
-      ],
-      "room":"Statler Hall 185-Aud",
-      "color":"darkorange"
-   },
-   {
-      "schedule":"NYNYNNN",
-      "startDate":"08/23/2018",
-      "course":"ECON 3130",
-      "endTime":"9:55AM",
-      "section":"LEC 001",
-      "startTime":"8:40AM",
-      "endDate":"12/04/2018",
-      "latlng":[
-         42.447205,
-         -76.482197
-      ],
-      "room":"Uris Hall G01",
-      "color":"brown"
-   },
-   {
-      "schedule":"NNNNNYN",
-      "startDate":"08/23/2018",
-      "course":"ECON 3130",
-      "endTime":"2:15PM",
-      "section":"DIS 203",
-      "startTime":"1:25PM",
-      "endDate":"12/04/2018",
-      "latlng":[
-         42.448983,
-         -76.481771
-      ],
-      "room":"Rockefeller Hall 115",
-      "color":"brown"
-   }
-];
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -110,10 +17,6 @@ export default class App extends React.Component {
       date: null,
       error: false,
     }
-  }
-
-  componentDidMount() {
-    this.updateData(data);
   }
 
   updateData(sessions) {
