@@ -5,6 +5,10 @@ import {
 } from 'react-bootstrap';
 
 export default class Header extends React.Component {
+  componentDidMount() {
+    document.body.addEventListener('click', () => this.refs.trigger.hide());
+  }
+
   renderPopover(exampleListener) {
     return (
       <Popover id="popover-feedback">
@@ -20,6 +24,7 @@ export default class Header extends React.Component {
       </Popover>
     );
   }
+
   render() {
     const {
       link, linkChangeListener, submissionListener, exampleListener,
@@ -40,6 +45,7 @@ export default class Header extends React.Component {
                   onChange={linkChangeListener}
                 />
                 <OverlayTrigger
+                  ref="trigger"
                   trigger="click"
                   placement="bottom"
                   overlay={this.renderPopover(exampleListener)}
