@@ -9,7 +9,7 @@ Django==2.0.7
 gunicorn==19.7.1
 fake-useragent==0.1.10
 idna==2.7
-lxml==4.2.3
+lxml==4.6.3
 parse==1.8.4
 py-backwards==0.7
 py-backwards-astunparse==1.5.0.post3
