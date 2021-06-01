@@ -23,7 +23,7 @@ requests-html==0.6.6
 selenium==3.13.0
 six==1.11.0
 typed-ast==1.1.0
-urllib3==1.23
+urllib3==1.26.5
 w3lib==1.19.0
 websockets==6.0
 whitenoise==3.3.1
